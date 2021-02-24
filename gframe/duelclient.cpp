@@ -125,13 +125,13 @@ void DuelClient::ClientEvent(bufferevent *bev, short events, void *ctx) {
 				BufferIO::CopyWStr(L"", cscg.pass, 20);
 				cscg.info.rule = 2;
 				cscg.info.mode = 0;
-				cscg.info.start_hand = 5;
-				cscg.info.start_lp = 8000;
+				cscg.info.start_hand = 4;
+				cscg.info.start_lp = 4000;
 				cscg.info.draw_count = 1;
 				cscg.info.time_limit = 0;
 				cscg.info.lflist = 0;
 				cscg.info.duel_rule = mainGame->cbBotRule->getSelected() + 3;
-				cscg.info.no_check_deck = mainGame->chkBotNoCheckDeck->isChecked();
+				cscg.info.no_check_deck = 1;
 				cscg.info.no_shuffle_deck = mainGame->chkBotNoShuffleDeck->isChecked();
 			}
 			else {
